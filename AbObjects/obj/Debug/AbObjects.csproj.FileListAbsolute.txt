@@ -1,0 +1,5 @@
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbObjects\bin\Debug\AbObjects.dll
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbObjects\bin\Debug\AbObjects.pdb
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbObjects\obj\Debug\AbObjects.dll
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbObjects\obj\Debug\AbObjects.pdb
