@@ -10,12 +10,24 @@ namespace WebSite.Controllers
 {
     public class HomeController: Controller
     {
+        AbCoreData.IBookRepository bookRepository =null;
+
+        public HomeController(AbCoreData.IBookRepository _bookRepository)
+        {
+            bookRepository = _bookRepository;
+        }
+
+        public HomeController()
+            :this(new AbCoreData.Implementation.BookRepository())
+        {         
+        }
+
         public ActionResult Index()
         {
             ViewBag.PersonName = "Shailesh";
             return View();
         }
-       
+        [CustomAction]
         public ActionResult ClientList()
         {
             Person client1 = new Person();
@@ -35,6 +47,18 @@ namespace WebSite.Controllers
             clientList.Add(client2);
 
             return View(clientList);
+        }
+
+        public ActionResult Person()
+        {
+            return View();
+        }
+        public ActionResult Books()
+        {
+            List<AbCoreData.Book> books = null;
+            books = bookRepository.GetList();
+          
+            return View(books);
         }
     }
 }

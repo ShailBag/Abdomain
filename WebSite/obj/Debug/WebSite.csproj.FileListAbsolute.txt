@@ -27,3 +27,7 @@ C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\WebSite\obj\Debug\WebSit
 C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\WebSite\bin\AbObjects.dll
 C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\WebSite\bin\AbObjects.pdb
 C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\WebSite\bin\Microsoft.Web.Infrastructure.xml
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\WebSite\bin\AbDomain.mdf
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\WebSite\bin\AbDomain_log.ldf
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\WebSite\bin\AbCoreData.dll
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\WebSite\bin\AbCoreData.pdb

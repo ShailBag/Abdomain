@@ -1,0 +1,8 @@
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbCoreData\bin\Debug\AbDomain.mdf
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbCoreData\bin\Debug\AbDomain_log.ldf
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbCoreData\bin\Debug\AbCoreData.dll.config
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbCoreData\bin\Debug\AbCoreData.dll
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbCoreData\bin\Debug\AbCoreData.pdb
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbCoreData\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbCoreData\obj\Debug\AbCoreData.dll
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbCoreData\obj\Debug\AbCoreData.pdb

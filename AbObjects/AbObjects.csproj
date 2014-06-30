@@ -45,6 +45,12 @@
     <Compile Include="IPerson.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AbCoreData\AbCoreData.csproj">
+      <Project>{7D919458-C4EF-4EE9-8828-BE64A56FB122}</Project>
+      <Name>AbCoreData</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,0 +1,27 @@
+﻿@model IEnumerable<AbCoreData.Book>
+
+@{
+    ViewBag.Title = "Books";
+}
+
+<h2>Books</h2>
+
+<table style="width:400px;">
+<tr>
+<th> Book Name </th><th> Author Name </th><th> Available </th>
+</tr>
+@foreach (AbCoreData.Book item in Model)
+{
+   <tr>
+   <td>
+        @item.BookName
+   </td>
+   <td>
+        @item.AuthorName
+   </td>
+   <td>
+        @item.ISBN
+   </td>
+   </tr>                                                     
+}
+</table>

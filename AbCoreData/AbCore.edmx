@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AbDomainModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="AbDomainModelStoreContainer">
+          <EntitySet Name="Books" EntityType="AbDomainModel.Store.Books" store:Type="Tables" store:Schema="dbo" store:Name="Books">
+            <DefiningQuery>SELECT 
+      [Books].[ID] AS [ID], 
+      [Books].[BookName] AS [BookName], 
+      [Books].[AuthorName] AS [AuthorName], 
+      [Books].[ISBN] AS [ISBN]
+      FROM [dbo].[Books] AS [Books]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'C:\DOCUMENTS AND SETTINGS\CPDCINITIATOR\DOTNET\ABDOMAIN\ABCOREDATA\ABDOMAIN.MDF.dbo.Books' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Books">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="BookName" Type="nvarchar" MaxLength="50" />
+          <Property Name="AuthorName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ISBN" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AbDomainModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="AbDomainEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Books" EntityType="AbDomainModel.Book" />
+        </EntityContainer>
+        <EntityType Name="Book">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="BookName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="AuthorName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ISBN" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AbDomainModelStoreContainer" CdmEntityContainer="AbDomainEntities">
+          <EntitySetMapping Name="Books"><EntityTypeMapping TypeName="AbDomainModel.Book"><MappingFragment StoreEntitySet="Books">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="BookName" ColumnName="BookName" />
+            <ScalarProperty Name="AuthorName" ColumnName="AuthorName" />
+            <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="AbCore">
+        <EntityTypeShape EntityType="AbDomainModel.Book" Width="1.5" PointX="0.75" PointY="0.75" Height="1.5923063151041665" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

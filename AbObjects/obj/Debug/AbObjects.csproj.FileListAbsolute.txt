@@ -3,3 +3,7 @@ C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbObjects\bin\Debug\AbOb
 C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbObjects\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbObjects\obj\Debug\AbObjects.dll
 C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbObjects\obj\Debug\AbObjects.pdb
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbObjects\bin\Debug\AbDomain.mdf
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbObjects\bin\Debug\AbDomain_log.ldf
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbObjects\bin\Debug\AbCoreData.dll
+C:\Documents and Settings\cpdcinitiator\Dotnet\AbDomain\AbObjects\bin\Debug\AbCoreData.pdb

@@ -123,12 +123,17 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="CustomActionAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\AbDomain.mdf" />
+    <Content Include="App_Data\AbDomain_log.ldf">
+      <DependentUpon>AbDomain.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\Images\user.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -215,7 +220,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -225,6 +229,10 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AbCoreData\AbCoreData.csproj">
+      <Project>{7D919458-C4EF-4EE9-8828-BE64A56FB122}</Project>
+      <Name>AbCoreData</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AbObjects\AbObjects.csproj">
       <Project>{7A56C678-2AAC-4542-B850-0CA08AAB64D3}</Project>
       <Name>AbObjects</Name>
@@ -238,6 +246,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\ClientList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Person.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Books.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
